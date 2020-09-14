@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://HowToPlayMenu.gd" type="Script" id=1]
+
+[node name="HowToPlayMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+margin_right = 1280.0
+margin_bottom = 736.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 396.0
+margin_top = 340.0
+margin_right = 883.0
+margin_bottom = 395.0
+alignment = 1
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_right = 487.0
+margin_bottom = 31.0
+text = "Spillet går ud på at fixe ting, gå op til tavlen og lav opgaven for at fixe bordet.
+Du Skal trykke på mellemrum for at lave opgaverne."
+align = 1
+
+[node name="Button" type="Button" parent="CenterContainer/VBoxContainer"]
+margin_top = 35.0
+margin_right = 487.0
+margin_bottom = 55.0
+text = "Back"
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Button" to="." method="_on_Button_pressed"]
