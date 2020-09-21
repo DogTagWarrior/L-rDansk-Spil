@@ -1,0 +1,6 @@
+[gd_resource type="DynamicFont" load_steps=2 format=2]
+
+[ext_resource path="res://Fonts/Archerus Millitant/acherus_militant_1_-_bold.otf.ttf" type="DynamicFontData" id=1]
+
+[resource]
+font_data = ExtResource( 1 )

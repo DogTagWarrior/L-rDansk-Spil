@@ -1,7 +1,5 @@
 extends Area2D
 
-
-
 func _physics_process(delta):
 	var INTERACT_KEY = Input.is_action_pressed("ui_select")
 	

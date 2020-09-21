@@ -81,6 +81,7 @@ position = Vector2( 576, 32 )
 script = ExtResource( 11 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tilemaps/Tavle/TavleDetector"]
+visible = false
 shape = SubResource( 3 )
 
 [node name="Reol1" type="TileMap" parent="Tilemaps"]
