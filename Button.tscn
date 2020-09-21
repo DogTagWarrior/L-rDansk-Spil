@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Fonts/Montserrat/Montserret .tres" type="DynamicFont" id=1]
+
+[node name="NewGameButton" type="Button"]
+margin_right = 1040.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 360, 60 )
+flat = true
+align = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_right = 40.0
+margin_bottom = 21.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color_shadow = Color( 0.180392, 0.403922, 0.105882, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 5
+text = "New Game"
+__meta__ = {
+"_edit_use_anchors_": false
+}
