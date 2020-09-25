@@ -9,6 +9,8 @@ var direction = Vector2(0,0)
 func _physics_process(delta):
 	controls()
 	movement()
+	GlobalValues.points = min(GlobalValues.points, 100)
+	print(GlobalValues.points)
 
 
 func controls():

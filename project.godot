@@ -19,6 +19,10 @@ config/name="Lær Dansk Spil"
 run/main_scene="res://World.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+GlobalValues="*res://GlobalValues.tscn"
+
 [display]
 
 window/size/width=1280
