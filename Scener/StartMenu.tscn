@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://StartMenu.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/StartMenu.gd" type="Script" id=1]
 [ext_resource path="res://16 Bit School Asset Pack/Logo_Title_3X.png" type="Texture" id=2]
-[ext_resource path="res://Button.tscn" type="PackedScene" id=3]
-[ext_resource path="res://HowToPlayButton.tscn" type="PackedScene" id=4]
-[ext_resource path="res://QuitGameButton.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scener/Button.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scener/HowToPlayButton.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scener/QuitGameButton.tscn" type="PackedScene" id=5]
 
 [node name="StartMenu" type="Control"]
 anchor_right = 1.0

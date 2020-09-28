@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Fonts/Montserrat/Montserret-Size20.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Fonts/Montserrat/Montserret-Size26.tres" type="DynamicFont" id=2]
-[ext_resource path="res://Opgave Scene.gd" type="Script" id=3]
+[ext_resource path="res://Scripts/Opgave Scene.gd" type="Script" id=3]
 
 [node name="Opgave Scene" type="Control"]
 anchor_right = 1.0
@@ -15,7 +15,6 @@ OptionButtonPath1 = NodePath("VBoxContainer/Question1/OptionButton")
 OptionButtonPath2 = NodePath("VBoxContainer/Question2/OptionButton2")
 OptionButtonPath3 = NodePath("VBoxContainer/Question3/OptionButton3")
 OptionButtonPath4 = NodePath("VBoxContainer/Question4/OptionButton4")
-OptionButtonPath5 = NodePath("VBoxContainer/Question5/OptionButton5")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 margin_right = 1280.0
@@ -28,7 +27,7 @@ __meta__ = {
 margin_right = 1280.0
 margin_bottom = 33.0
 custom_fonts/font = ExtResource( 2 )
-text = "Et eller to ord"
+text = "Udsagnsord - Ender det på r?"
 align = 1
 
 [node name="Question1" type="HBoxContainer" parent="VBoxContainer"]
@@ -38,33 +37,33 @@ margin_bottom = 69.0
 alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/Question1"]
-margin_left = 416.0
-margin_right = 416.0
+margin_left = 450.0
+margin_right = 450.0
 margin_bottom = 32.0
 
 [node name="Label" type="Label" parent="VBoxContainer/Question1"]
-margin_left = 420.0
+margin_left = 454.0
 margin_top = 3.0
-margin_right = 558.0
+margin_right = 545.0
 margin_bottom = 29.0
 custom_fonts/font = ExtResource( 1 )
-text = "Du skal vente"
+text = "Man skal"
 
 [node name="OptionButton" type="OptionButton" parent="VBoxContainer/Question1"]
-margin_left = 562.0
-margin_right = 693.0
+margin_left = 549.0
+margin_right = 680.0
 margin_bottom = 32.0
 custom_fonts/font = ExtResource( 1 )
 text = "---Vælg---"
 align = 1
 
 [node name="Label2" type="Label" parent="VBoxContainer/Question1"]
-margin_left = 697.0
+margin_left = 684.0
 margin_top = 3.0
-margin_right = 864.0
+margin_right = 830.0
 margin_bottom = 29.0
 custom_fonts/font = ExtResource( 1 )
-text = ", dit fucking svin"
+text = " Fra sit ansvar."
 
 [node name="Question2" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 73.0
@@ -73,33 +72,33 @@ margin_bottom = 105.0
 alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/Question2"]
-margin_left = 416.0
-margin_right = 416.0
+margin_left = 377.0
+margin_right = 377.0
 margin_bottom = 32.0
 
 [node name="Label" type="Label" parent="VBoxContainer/Question2"]
-margin_left = 420.0
+margin_left = 381.0
 margin_top = 3.0
-margin_right = 558.0
+margin_right = 540.0
 margin_bottom = 29.0
 custom_fonts/font = ExtResource( 1 )
-text = "Du skal vente"
+text = "Han er den, der "
 
 [node name="OptionButton2" type="OptionButton" parent="VBoxContainer/Question2"]
-margin_left = 562.0
-margin_right = 693.0
+margin_left = 544.0
+margin_right = 675.0
 margin_bottom = 32.0
 custom_fonts/font = ExtResource( 1 )
 text = "---Vælg---"
 align = 1
 
 [node name="Label2" type="Label" parent="VBoxContainer/Question2"]
-margin_left = 697.0
+margin_left = 679.0
 margin_top = 3.0
-margin_right = 864.0
+margin_right = 902.0
 margin_bottom = 29.0
 custom_fonts/font = ExtResource( 1 )
-text = ", dit fucking svin"
+text = " Hurtigst af drengene."
 
 [node name="Question3" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 109.0
@@ -108,33 +107,33 @@ margin_bottom = 141.0
 alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/Question3"]
-margin_left = 416.0
-margin_right = 416.0
+margin_left = 444.0
+margin_right = 444.0
 margin_bottom = 32.0
 
 [node name="Label" type="Label" parent="VBoxContainer/Question3"]
-margin_left = 420.0
+margin_left = 448.0
 margin_top = 3.0
-margin_right = 558.0
+margin_right = 571.0
 margin_bottom = 29.0
 custom_fonts/font = ExtResource( 1 )
-text = "Du skal vente"
+text = "Man kan let "
 
 [node name="OptionButton3" type="OptionButton" parent="VBoxContainer/Question3"]
-margin_left = 562.0
-margin_right = 693.0
+margin_left = 575.0
+margin_right = 706.0
 margin_bottom = 32.0
 custom_fonts/font = ExtResource( 1 )
 text = "---Vælg---"
 align = 1
 
 [node name="Label2" type="Label" parent="VBoxContainer/Question3"]
-margin_left = 697.0
+margin_left = 710.0
 margin_top = 3.0
-margin_right = 864.0
+margin_right = 836.0
 margin_bottom = 29.0
 custom_fonts/font = ExtResource( 1 )
-text = ", dit fucking svin"
+text = " sig udenfor."
 
 [node name="Question4" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 145.0
@@ -143,33 +142,33 @@ margin_bottom = 177.0
 alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/Question4"]
-margin_left = 416.0
-margin_right = 416.0
+margin_left = 418.0
+margin_right = 418.0
 margin_bottom = 32.0
 
 [node name="Label" type="Label" parent="VBoxContainer/Question4"]
-margin_left = 420.0
+margin_left = 422.0
 margin_top = 3.0
-margin_right = 558.0
+margin_right = 469.0
 margin_bottom = 29.0
 custom_fonts/font = ExtResource( 1 )
-text = "Du skal vente"
+text = "Hun "
 
 [node name="OptionButton4" type="OptionButton" parent="VBoxContainer/Question4"]
-margin_left = 562.0
-margin_right = 693.0
+margin_left = 473.0
+margin_right = 604.0
 margin_bottom = 32.0
 custom_fonts/font = ExtResource( 1 )
 text = "---Vælg---"
 align = 1
 
 [node name="Label2" type="Label" parent="VBoxContainer/Question4"]
-margin_left = 697.0
+margin_left = 608.0
 margin_top = 3.0
-margin_right = 864.0
+margin_right = 862.0
 margin_bottom = 29.0
 custom_fonts/font = ExtResource( 1 )
-text = ", dit fucking svin"
+text = " Ingenting for ham mere."
 
 [node name="Question5" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 181.0
@@ -178,35 +177,52 @@ margin_bottom = 213.0
 alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/Question5"]
-margin_left = 416.0
-margin_right = 416.0
+margin_left = 437.0
+margin_right = 437.0
 margin_bottom = 32.0
 
 [node name="Label" type="Label" parent="VBoxContainer/Question5"]
-margin_left = 420.0
+margin_left = 441.0
 margin_top = 3.0
-margin_right = 558.0
+margin_right = 611.0
 margin_bottom = 29.0
 custom_fonts/font = ExtResource( 1 )
-text = "Du skal vente"
+text = "Hun skal lære at "
 
 [node name="OptionButton5" type="OptionButton" parent="VBoxContainer/Question5"]
-margin_left = 562.0
-margin_right = 693.0
+margin_left = 615.0
+margin_right = 746.0
 margin_bottom = 32.0
 custom_fonts/font = ExtResource( 1 )
 text = "---Vælg---"
 align = 1
 
 [node name="Label2" type="Label" parent="VBoxContainer/Question5"]
-margin_left = 697.0
+margin_left = 750.0
 margin_top = 3.0
-margin_right = 864.0
+margin_right = 843.0
 margin_bottom = 29.0
 custom_fonts/font = ExtResource( 1 )
-text = ", dit fucking svin"
+text = " sig frem."
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer"]
+margin_top = 217.0
+margin_right = 1280.0
+margin_bottom = 249.0
+
+[node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/VBoxContainer"]
+margin_right = 1280.0
+margin_bottom = 32.0
+
+[node name="Button" type="Button" parent="VBoxContainer/VBoxContainer/CenterContainer"]
+margin_left = 609.0
+margin_right = 671.0
+margin_bottom = 32.0
+custom_fonts/font = ExtResource( 1 )
+text = "Back"
 [connection signal="item_selected" from="VBoxContainer/Question1/OptionButton" to="." method="_on_OptionButton_item_selected"]
 [connection signal="item_selected" from="VBoxContainer/Question2/OptionButton2" to="." method="_on_OptionButton2_item_selected"]
 [connection signal="item_selected" from="VBoxContainer/Question3/OptionButton3" to="." method="_on_OptionButton3_item_selected"]
 [connection signal="item_selected" from="VBoxContainer/Question4/OptionButton4" to="." method="_on_OptionButton4_item_selected"]
 [connection signal="item_selected" from="VBoxContainer/Question5/OptionButton5" to="." method="_on_OptionButton5_item_selected"]
+[connection signal="pressed" from="VBoxContainer/VBoxContainer/CenterContainer/Button" to="." method="_on_Button_pressed"]

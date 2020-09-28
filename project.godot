@@ -16,12 +16,12 @@ _global_script_class_icons={
 [application]
 
 config/name="Lær Dansk Spil"
-run/main_scene="res://World.tscn"
+run/main_scene="res://Scener/World.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-GlobalValues="*res://GlobalValues.tscn"
+GlobalValues="*res://Scener/GlobalValues.tscn"
 
 [display]
 

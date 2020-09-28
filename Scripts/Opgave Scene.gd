@@ -22,28 +22,28 @@ func _ready():
 func add_items():
 	#Question1
 	OptionButton.add_item("---Vælg---")
-	OptionButton.add_item("Udenfor")
-	OptionButton.add_item("Uden for")
+	OptionButton.add_item("Løbe")
+	OptionButton.add_item("Løber")
 	
 	#Question2
 	OptionButton2.add_item("---Vælg---")
-	OptionButton2.add_item("nedad")
-	OptionButton2.add_item("ned ad")
+	OptionButton2.add_item("Løbe")
+	OptionButton2.add_item("Løber")
 	
 	#Question3
 	OptionButton3.add_item("---Vælg---")
-	OptionButton3.add_item("nedenfor")
-	OptionButton3.add_item("neden for")
+	OptionButton3.add_item("Føle")
+	OptionButton3.add_item("Føler")
 	
 	#Question4
 	OptionButton4.add_item("---Vælg---")
-	OptionButton4.add_item("bedst kendt")
-	OptionButton4.add_item("bedstkendt")
+	OptionButton4.add_item("Føle")
+	OptionButton4.add_item("Føler")
 	
 	#Question5
 	OptionButton5.add_item("---Vælg---")
-	OptionButton5.add_item("handels folk")
-	OptionButton5.add_item("handelsfolk")
+	OptionButton5.add_item("Føle")
+	OptionButton5.add_item("Føler")
 	
 func _on_OptionButton_item_selected(Answer1):
 	print(Answer1)
@@ -51,13 +51,19 @@ func _on_OptionButton_item_selected(Answer1):
 		AnswerRight = true
 	else:
 		AnswerRight = false
+	
+	if AnswerRight == true && AnswerRight2 == true && AnswerRight3 == true && AnswerRight4 == true && AnswerRigth5 == true:
+		GlobalValues.points += 10
 
 func _on_OptionButton2_item_selected(Answer2):
 	print(Answer2)
-	if Answer2 == 1:
+	if Answer2 == 2:
 		AnswerRight2 = true
 	else:
 		AnswerRight2 = false
+	
+	if AnswerRight == true && AnswerRight2 == true && AnswerRight3 == true && AnswerRight4 == true && AnswerRigth5 == true:
+		GlobalValues.points += 10
 
 
 func _on_OptionButton3_item_selected(Answer3):
@@ -66,32 +72,37 @@ func _on_OptionButton3_item_selected(Answer3):
 		AnswerRight3 = true
 	else:
 		AnswerRight3 = false
+	
+	if AnswerRight == true && AnswerRight2 == true && AnswerRight3 == true && AnswerRight4 == true && AnswerRigth5 == true:
+		GlobalValues.points += 10
 
 
 func _on_OptionButton4_item_selected(Answer4):
 	print(Answer4)
 	print(AnswerRight4)
-	if Answer4 == 1:
+	if Answer4 == 2:
 		AnswerRight4 = true
 	else:
 		AnswerRight4 = false
-
+	
+	if AnswerRight == true && AnswerRight2 == true && AnswerRight3 == true && AnswerRight4 == true && AnswerRigth5 == true:
+		GlobalValues.points += 10
 
 func _on_OptionButton5_item_selected(Answer5):
 	print(Answer5)
+	print(AnswerRigth5)
 	if Answer5 == 1:
 		AnswerRigth5 = true
 	else:
 		AnswerRigth5 = false
-
-func PointCheck():
+	
 	if AnswerRight == true && AnswerRight2 == true && AnswerRight3 == true && AnswerRight4 == true && AnswerRigth5 == true:
 		GlobalValues.points += 10
 
 
 func _physics_process(delta):
 	print(GlobalValues.points)
-	
-	
-	
-	
+
+func _on_Button_pressed():
+	get_tree().change_scene("res://Scener/World.tscn")
+

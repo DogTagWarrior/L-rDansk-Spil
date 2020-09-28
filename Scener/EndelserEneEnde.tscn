@@ -1,0 +1,192 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Fonts/Montserrat/Montserret-Size20.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Fonts/Montserrat/Montserret-Size26.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Scripts/Opgave Scene.gd" type="Script" id=3]
+
+[node name="Opgave Scene" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+OptionButtonPath1 = NodePath("VBoxContainer/Question1/OptionButton")
+OptionButtonPath2 = NodePath("VBoxContainer/Question2/OptionButton2")
+OptionButtonPath3 = NodePath("VBoxContainer/Question3/OptionButton3")
+OptionButtonPath4 = NodePath("VBoxContainer/Question4/OptionButton4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_right = 1280.0
+margin_bottom = 736.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+margin_right = 1280.0
+margin_bottom = 33.0
+custom_fonts/font = ExtResource( 2 )
+text = "Endelserne -ene og -ende"
+align = 1
+
+[node name="Question1" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 37.0
+margin_right = 1280.0
+margin_bottom = 69.0
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/Question1"]
+margin_left = 449.0
+margin_right = 449.0
+margin_bottom = 32.0
+
+[node name="Label" type="Label" parent="VBoxContainer/Question1"]
+margin_left = 453.0
+margin_top = 3.0
+margin_right = 551.0
+margin_bottom = 29.0
+custom_fonts/font = ExtResource( 1 )
+text = "Hun kom "
+
+[node name="OptionButton" type="OptionButton" parent="VBoxContainer/Question1"]
+margin_left = 555.0
+margin_right = 686.0
+margin_bottom = 32.0
+custom_fonts/font = ExtResource( 1 )
+text = "---Vælg---"
+align = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer/Question1"]
+margin_left = 690.0
+margin_top = 3.0
+margin_right = 830.0
+margin_bottom = 29.0
+custom_fonts/font = ExtResource( 1 )
+text = " over marken."
+
+[node name="Question2" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 73.0
+margin_right = 1280.0
+margin_bottom = 105.0
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/Question2"]
+margin_left = 439.0
+margin_right = 439.0
+margin_bottom = 32.0
+
+[node name="Label" type="Label" parent="VBoxContainer/Question2"]
+margin_left = 443.0
+margin_top = 3.0
+margin_right = 489.0
+margin_bottom = 29.0
+custom_fonts/font = ExtResource( 1 )
+text = "Alle "
+
+[node name="OptionButton2" type="OptionButton" parent="VBoxContainer/Question2"]
+margin_left = 493.0
+margin_right = 624.0
+margin_bottom = 32.0
+custom_fonts/font = ExtResource( 1 )
+text = "---Vælg---"
+align = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer/Question2"]
+margin_left = 628.0
+margin_top = 3.0
+margin_right = 840.0
+margin_bottom = 29.0
+custom_fonts/font = ExtResource( 1 )
+text = "skulle være over 1 m	."
+
+[node name="Question3" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 109.0
+margin_right = 1280.0
+margin_bottom = 141.0
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/Question3"]
+margin_left = 405.0
+margin_right = 405.0
+margin_bottom = 32.0
+
+[node name="Label" type="Label" parent="VBoxContainer/Question3"]
+margin_left = 409.0
+margin_top = 3.0
+margin_right = 666.0
+margin_bottom = 29.0
+custom_fonts/font = ExtResource( 1 )
+text = "Han kunne ikke fange de "
+
+[node name="OptionButton3" type="OptionButton" parent="VBoxContainer/Question3"]
+margin_left = 670.0
+margin_right = 801.0
+margin_bottom = 32.0
+custom_fonts/font = ExtResource( 1 )
+text = "---Vælg---"
+align = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer/Question3"]
+margin_left = 805.0
+margin_top = 3.0
+margin_right = 874.0
+margin_bottom = 29.0
+custom_fonts/font = ExtResource( 1 )
+text = " bolde."
+
+[node name="Question4" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 145.0
+margin_right = 1280.0
+margin_bottom = 177.0
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/Question4"]
+margin_left = 406.0
+margin_right = 406.0
+margin_bottom = 32.0
+
+[node name="Label" type="Label" parent="VBoxContainer/Question4"]
+margin_left = 410.0
+margin_top = 3.0
+margin_right = 640.0
+margin_bottom = 29.0
+custom_fonts/font = ExtResource( 1 )
+text = "Mon hesten ville klare "
+
+[node name="OptionButton4" type="OptionButton" parent="VBoxContainer/Question4"]
+margin_left = 644.0
+margin_right = 775.0
+margin_bottom = 32.0
+custom_fonts/font = ExtResource( 1 )
+text = "---Vælg---"
+align = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer/Question4"]
+margin_left = 779.0
+margin_top = 3.0
+margin_right = 874.0
+margin_bottom = 29.0
+custom_fonts/font = ExtResource( 1 )
+text = " uden fejl"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer"]
+margin_top = 181.0
+margin_right = 1280.0
+margin_bottom = 213.0
+
+[node name="CenterContainer" type="CenterContainer" parent="VBoxContainer/VBoxContainer"]
+margin_right = 1280.0
+margin_bottom = 32.0
+
+[node name="Button" type="Button" parent="VBoxContainer/VBoxContainer/CenterContainer"]
+margin_left = 609.0
+margin_right = 671.0
+margin_bottom = 32.0
+custom_fonts/font = ExtResource( 1 )
+text = "Back"
+[connection signal="item_selected" from="VBoxContainer/Question1/OptionButton" to="." method="_on_OptionButton_item_selected"]
+[connection signal="item_selected" from="VBoxContainer/Question2/OptionButton2" to="." method="_on_OptionButton2_item_selected"]
+[connection signal="item_selected" from="VBoxContainer/Question3/OptionButton3" to="." method="_on_OptionButton3_item_selected"]
+[connection signal="item_selected" from="VBoxContainer/Question4/OptionButton4" to="." method="_on_OptionButton4_item_selected"]
+[connection signal="pressed" from="VBoxContainer/VBoxContainer/CenterContainer/Button" to="." method="_on_Button_pressed"]
